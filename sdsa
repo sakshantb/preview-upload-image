@@ -1,0 +1,9 @@
+  <form>
+        <input type="file" onchange="preview()">
+        <img id="thumb" src="" width="150px" />
+    </form>
+    <script>
+    function preview() {
+        thumb.src = URL.createObjectURL(event.target.files[0]);
+    }
+    </script>
